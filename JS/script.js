@@ -16,13 +16,15 @@ if (age < 18) {
     let Prezzo_Scontato = 0;
     Prezzo_Scontato = (Prezzo - Sconto);
     console.log(Prezzo_Scontato, typeof Prezzo_Scontato, 'Prezzo_Scontato');
+
+    Prezzo_Scontato = Prezzo_Scontato.toFixed(2);
     
     const Prezzo_Finale = document.getElementById("prezzofinale");
-    console.log(Prezzo_Finale, typeof Prezzo_Finale, 'Prezzo_Finale');  
+    console.log(Prezzo_Finale, typeof Prezzo_Finale, 'Prezzo_Finale'); 
 
     Prezzo_Finale.innerHTML =  Prezzo_Finale.innerHTML + Prezzo_Scontato;
 
-    Math. floor(Prezzo_Scontato);
+    
 }
 
 else if (age > 65) {
@@ -34,14 +36,13 @@ else if (age > 65) {
     let Prezzo_Scontato = 0;
     Prezzo_Scontato = (Prezzo - Sconto);
     console.log(Prezzo_Scontato, typeof Prezzo_Scontato, 'Prezzo_Scontato');
-    
 
+    Prezzo_Scontato = Prezzo_Scontato.toFixed(2);
+    
     const Prezzo_Finale = document.getElementById("prezzofinale");
     console.log(Prezzo_Finale, typeof Prezzo_Finale, 'Prezzo_Finale');  
 
     Prezzo_Finale.innerHTML =  Prezzo_Finale.innerHTML + Prezzo_Scontato;
-
-    Math. floor(Prezzo_Scontato);
 
 }
 
@@ -53,13 +54,13 @@ else if (18 > age < 65) {
     let Prezzo_Scontato = 0;
     Prezzo_Scontato = (Prezzo - Sconto);
     console.log(Prezzo_Scontato, typeof Prezzo_Scontato, 'Prezzo_Scontato');
+
+    Prezzo_Scontato = Prezzo_Scontato.toFixed(2);
     
     const Prezzo_Finale = document.getElementById("prezzofinale");
     console.log(Prezzo_Finale, typeof Prezzo_Finale, 'Prezzo_Finale');  
 
     Prezzo_Finale.innerHTML =  Prezzo_Finale.innerHTML + Prezzo_Scontato;
-
-    Math. floor(Prezzo_Scontato);
 }
 
 
